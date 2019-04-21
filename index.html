@@ -1,6 +1,6 @@
 ---
 profile: true
-title:  "Steps to use mencdec"
+title:  "Encrypt & Decrypt strings using Javascript"
 date:   2019-04-11 13:43:00
 description: Encryption & Decryption in Vanilla JS
 ---
@@ -26,8 +26,10 @@ To encrypt a string
 
 To decrypt a string
 
+{% highlight html %}
 <script type="text/javascript">
     var mencdec = new mEncDec("æ÷áæ£ ¡");
     var decrypt = mencdec.mdecrypt();
     console.log(decrypt); // Output: test123
 </script>
+{% endhighlight %}
