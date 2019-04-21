@@ -1,23 +1,23 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Encryption & Descryption in vanilla js
+description: Javascript Encryption & Decryption
+meta_description: "Encypt and Decrypt string in pure js"
 
-aboutPage: true
+aboutPage: false
 
 markdown: kramdown
 highlighter: rouge
 
 plugins: [jekyll-paginate]
 paginate: 20
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+domain_name: 'https://mohan-askan.github.io/mencde'
+google_analytics: 'UA-138714406-1'
+disqus: true
+disqus_shortname: 'mencdec'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+url:            'https://mohan-askan.github.io/mencdec'
+author:         'Mohan'
+authorTwitter:  '@mohan'
 
 permalink:       /:year/:title/
 
