@@ -9,18 +9,17 @@
 - To encrypt a string
     ```html
     <script type="text/javascript">
-       var mencdec = new mEncDec();
-       var encrypt = mencdec.encrypt("test123");
-       console.log(encrypt);
+        var mencdec = new mEncDec("test123");
+        var encrypt = mencdec.mencrypt();
+        console.log(encrypt); // Output: æ÷áæ£ ¡
     </script>
     ```
 - To decrypt a string
     ```html
     <script type="text/javascript">
-       var mencdec = new mEncDec();
-       var encrypt = mencdec.encrypt("test123");
-       var decrypt = mencdec.decrypt(encrypt);
-       console.log(decrypt);
+        var mencdec = new mEncDec("æ÷áæ£ ¡");
+        var decrypt = mencdec.mdecrypt();
+        console.log(decrypt); // Output: test123
     </script>
     ```
 ###### Note: Do not trim the encrypted string.
