@@ -1,4 +1,4 @@
-# mEncDec
+# mEncDec - ### A encryption decryption plugin using vanilla js
 
 #### How to use mencdec
 ##### Steps
