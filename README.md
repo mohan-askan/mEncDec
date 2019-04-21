@@ -1,5 +1,5 @@
-#### An *encryption* *decryption* plugin using vanilla js
-##### *Note: Do not trim the encrypted string.*
+## An *encryption* *decryption* plugin using vanilla js
+#### *Note: Do not trim the encrypted string.*
 ##### Steps to use mencdec
 1. *Add this js file to your webpage*
     ```html
