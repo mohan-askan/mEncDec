@@ -1,24 +1,33 @@
 ---
 profile: true
-title:  "Welcome to Jekyll!"
-date:   2013-11-10 10:18:00
-description: Thriller Comedy Horror
+title:  "Steps to use mencdec"
+date:   2019-04-11 13:43:00
+description: Encryption & Decryption in Vanilla JS
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+This can be used with all js frameworks as this is based on vanilla Js. This is based on a very basic encryption and decryption technique. This is just an initiative. With your efforts, I beleive we could create a more secure one soon. Thanks for having a look at this.
 
-Jekyll also offers powerful support for code snippets:
+The following were the steps to use this js plugin.
+Add this js file to your webpage
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight html %}
+<script src="https://cdn.jsdelivr.net/gh/mohan-askan/mencdec@master/mEncDec.js"></script>
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+To encrypt a string
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+{% highlight html %}
+<script type="text/javascript">
+    var mencdec = new mEncDec("test123");
+    var encrypt = mencdec.mencrypt();
+    console.log(encrypt); // Output: æ÷áæ£ ¡
+</script>
+{% endhighlight %}
+
+To decrypt a string
+
+<script type="text/javascript">
+    var mencdec = new mEncDec("æ÷áæ£ ¡");
+    var decrypt = mencdec.mdecrypt();
+    console.log(decrypt); // Output: test123
+</script>
