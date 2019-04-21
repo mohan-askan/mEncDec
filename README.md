@@ -1,4 +1,3 @@
-# mEncDec
 ## An *encryption* *decryption* plugin using vanilla js
 ### *Note: Do not trim the encrypted string.*
 #### Steps to use mencdec
